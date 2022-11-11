@@ -1,2 +1,5 @@
 # Github-API-Visualization
 A python program to create an informative visualization about the most-starred Python projects on GitHub.
+
+# Monitoring API Rate Limits
+Most APIs are rate limited, which means there’s a limit to how many requests you can make in a certain amount of time. To see if you’re approaching GitHub’s limits, enter https://api.github.com/rate_limit into a web browser. After browser loads, you will see that the information we’re interested in is the rate limit for the search API. We see that the limit is 10 requests per minute and that we have 8 requests remaining for the current minute. The reset value represents the time in Unix or epoch time (the number of seconds since midnight on January 1, 1970) when our quota will reset. If you reach your quota, you’ll get a short response that lets you know you’ve reached the API limit. If you reach the limit, just wait until your quota resets. Not Many APIs require you to register and obtain an API key to make API calls. As of this writing, GitHub has no such requirement, but if you obtain an API key, your limits will be much higher.
